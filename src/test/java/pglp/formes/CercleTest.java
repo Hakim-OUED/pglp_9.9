@@ -16,10 +16,10 @@ public class CercleTest {
   @Test
   public void Testdeplacer() {
     c1.deplacer(4,5);
-    assertTrue(c1.getCentre().getX()==4);
-    assertTrue(c1.getCentre().getY()==5);
+    assertTrue(c1.getCentre().getX()==6);
+    assertTrue(c1.getCentre().getY()==7);
     String value = "identifiant= c1" +
-        "--> Cercle(centre=(X:4, Y:5),rayon=6)";
+        "--> Cercle(centre=(X:6, Y:7),rayon=6)";
     assertTrue(c1.toString().equals(value));
   }
 

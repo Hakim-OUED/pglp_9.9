@@ -16,11 +16,11 @@ public class TriangleTest {
 
   @Test
   public void deplacer() {
-    tri.deplacer(5,4);
+    tri.deplacer(2,3);
     assertFalse(tri.getPoint3().getY()==-3);
     assertTrue(tri.getPoint2().getY()==0);
-    assertTrue(tri.getPoint1().getX()==5);
-    assertTrue(tri.getPoint2().getX()==2);
+    assertTrue(tri.getPoint1().getX()==7);
+    assertTrue(tri.getPoint2().getX()==4);
   }
 
   @Test

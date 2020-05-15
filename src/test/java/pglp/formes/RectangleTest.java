@@ -18,7 +18,7 @@ public class RectangleTest {
   public void testDeplacer() {
     rec.deplacer(3,7);
     assertFalse(rec.getOrigine().getX()==1);
-    assertTrue(rec.getOrigine().getY()==7);
+    assertTrue(rec.getOrigine().getY()==8);
   }
 
   @Test

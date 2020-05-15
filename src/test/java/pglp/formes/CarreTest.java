@@ -18,8 +18,8 @@ public class CarreTest {
   @Test
   public void testDeplacer() {
     ca1.deplacer(1,2);
-    assertTrue(ca1.getOrigine().getX()==1);
-    assertFalse(ca1.getOrigine().getY()==1);
+    assertTrue(ca1.getOrigine().getX()==3);
+    assertFalse(ca1.getOrigine().getY()==4);
   }
 
   @Test

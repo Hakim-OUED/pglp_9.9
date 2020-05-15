@@ -50,14 +50,9 @@ public class Triangle extends Forme {
    */
   @Override
   public Forme deplacer(int x, int y) {
-    int distX = x - this.point1.getX();
-    int distY = y - this.point1.getY();
-    this.point1.setX(x);
-    this.point1.setY(y);
-    this.point2.setX(this.point2.getX() + distX);
-    this.point2.setY(this.point2.getY() + distY);
-    this.point3.setX(this.point3.getX() + distX);
-    this.point3.setY(this.point3.getY() + distY);
+    this.point1.deplacer(x,y);
+    this.point2.deplacer(x,y);
+    this.point3.deplacer(x,y);
     return this;
   }
 

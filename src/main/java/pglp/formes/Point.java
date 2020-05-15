@@ -44,7 +44,7 @@ public class Point {
    * @return la position
    */
   public Point deplacerX(final int nx) {
-    this.setX(nx);
+    this.setX(this.getX() + nx);
     return this;
   }
 
@@ -60,7 +60,7 @@ public class Point {
    * @return la point
    */
   public Point deplacerY(final int ny) {
-    this.setY(ny);
+    this.setY(this.getY() + ny);
     return this;
   }
 
@@ -71,8 +71,8 @@ public class Point {
    * @return  le point
    */
   public Point deplacer(final int nx, final int ny) {
-    this.setX(nx);
-    this.setY(ny);
+    this.setX(this.getX() + nx);
+    this.setY(this.getY() + ny);
     return this;
   }
 
