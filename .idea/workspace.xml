@@ -1,20 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40a8daf1-0c91-4652-8b38-8f5139200c9b" name="Default Changelist" comment="" />
+    <list default="true" id="40a8daf1-0c91-4652-8b38-8f5139200c9b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/formes/Carre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/formes/Carre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/formes/Cercle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/formes/Cercle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/formes/Forme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/formes/Forme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/formes/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/formes/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/formes/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/formes/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/formes/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/formes/Triangle.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1bqcGpGVoCKWAFych4M1wuRANHv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,14 +50,114 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="pglp.formes" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TriangleTest.testToString">
+    <configuration name="RectangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pglp_9.9" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pglp.formes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pglp.formes" />
+      <option name="MAIN_CLASS_NAME" value="pglp.formes.RectangleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RectangleTest.testDeplacer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pglp_9.9" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pglp.formes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pglp.formes" />
+      <option name="MAIN_CLASS_NAME" value="pglp.formes.RectangleTest" />
+      <option name="METHOD_NAME" value="testDeplacer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TriangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pglp_9.9" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pglp.formes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pglp.formes" />
+      <option name="MAIN_CLASS_NAME" value="pglp.formes.TriangleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TriangleTest.deplacer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pglp_9.9" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pglp.formes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pglp.formes" />
+      <option name="MAIN_CLASS_NAME" value="pglp.formes.TriangleTest" />
+      <option name="METHOD_NAME" value="deplacer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TriangleTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pglp_9.9" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pglp.formes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pglp.formes" />
+      <option name="MAIN_CLASS_NAME" value="pglp.formes.TriangleTest" />
+      <option name="METHOD_NAME" value="testToString" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TriangleTest.testToString" />
+        <item itemvalue="JUnit.TriangleTest.deplacer" />
+        <item itemvalue="JUnit.TriangleTest" />
+        <item itemvalue="JUnit.RectangleTest" />
+        <item itemvalue="JUnit.RectangleTest.testDeplacer" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -54,7 +182,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589362971120</updated>
       <workItem from="1589362976719" duration="245000" />
-      <workItem from="1589471748894" duration="10298000" />
+      <workItem from="1589471748894" duration="16354000" />
     </task>
     <servers />
   </component>
@@ -62,29 +190,37 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1589546330705">
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1589550837275">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1589546330705" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1589363090870">
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1589550837275" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1589553656497">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589363090870" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1589363090869">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589553656497" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1589553656496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589363090869" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1589363090869">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589553656496" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1589553656496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589363090869" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1589363090869">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589553656496" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1589553656496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589363090869" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589553656496" />
     <state x="379" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1589472075504">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="379" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589472075504" />
+    <state x="454" y="66" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589551035831">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="454" y="66" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1589551035831" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1589550204447">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1589550204447" />
   </component>
 </project>

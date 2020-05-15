@@ -5,9 +5,9 @@ package pglp.formes;
  */
 public class Point {
   //postion x
-  private static int x;
+  private int x;
   //position y
-  private static int y;
+  private int y;
 
   Point(final int x, final int y) {
     this.x = x;
@@ -19,7 +19,7 @@ public class Point {
   }
 
   //
-  public static int getX() {
+  public int getX() {
     return x;
   }
   //
@@ -46,6 +46,12 @@ public class Point {
   public Point deplacerX(final int nx) {
     this.setX(nx);
     return this;
+  }
+
+  @Override
+  public String toString() {
+    return "X:" + this.getX()
+        + ", Y:" + this.getY();
   }
 
   /**

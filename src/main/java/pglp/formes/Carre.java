@@ -7,12 +7,38 @@ public class Carre extends Forme {
   //le coté du carré
   private int cote;
 
+  public Point getOrigine() {
+    return origine;
+  }
+
+  public void setOrigine(Point origine) {
+    this.origine = origine;
+  }
+
+  public int getCote() {
+    return cote;
+  }
+
+  public void setCote(int cote) {
+    this.cote = cote;
+  }
+
+
+
 
   public Carre(final String nom, final int x,
                final int y, final int cote) {
     super(nom);
     this.origine = new Point(x,y);
     this.cote = cote;
+  }
+
+  @Override
+  public String toString() {
+    return super.toString()
+        + "-->Carre(origine=" + origine
+        + "), cote=" + cote
+        + ')';
   }
 
   /**

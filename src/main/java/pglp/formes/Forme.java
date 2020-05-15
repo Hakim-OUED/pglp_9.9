@@ -19,4 +19,8 @@ public abstract class Forme {
    */
   public abstract Forme deplacer(int x, int y);
 
+  @Override
+  public String toString() {
+    return "identifiant= " + identifiant;
+  }
 }

@@ -7,6 +7,31 @@ public class Triangle extends Forme {
   private Point point2;
   //Troisième Point
   private Point point3;
+
+  public Point getPoint1() {
+    return point1;
+  }
+
+  public void setPoint1(Point point1) {
+    this.point1 = point1;
+  }
+
+  public Point getPoint2() {
+    return point2;
+  }
+
+  public void setPoint2(Point point2) {
+    this.point2 = point2;
+  }
+
+  public Point getPoint3() {
+    return point3;
+  }
+
+  public void setPoint3(Point point3) {
+    this.point3 = point3;
+  }
+
   public Triangle(final String nom,
                   final int x1, final int y1,
                   final int x2, final int y2,
@@ -34,5 +59,15 @@ public class Triangle extends Forme {
     this.point3.setX(this.point3.getX() + distX);
     this.point3.setY(this.point3.getY() + distY);
     return this;
+  }
+
+  @Override
+  public String toString() {
+    return super.toString()
+        +"-->Triangle(" +
+        "point1=(" + point1 +
+        "), point2=(" + point2 +
+        "), point3=(" + point3 +
+        "))";
   }
 }

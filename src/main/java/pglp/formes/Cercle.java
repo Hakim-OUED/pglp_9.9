@@ -42,4 +42,11 @@ public class Cercle extends Forme {
     return this;
   }
 
+  @Override
+  public String toString() {
+    return super.toString()
+        + "--> Cercle(centre=("
+        + this.centre
+        +"),rayon="+this.rayon+")";
+  }
 }
