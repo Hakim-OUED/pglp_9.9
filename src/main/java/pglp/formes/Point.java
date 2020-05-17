@@ -1,9 +1,18 @@
 package pglp.formes;
 
+import java.io.Serializable;
+
 /**
  *Classe Position
  */
-public class Point {
+public class Point implements Serializable {
+
+  /**
+   * uid Serial.
+   */
+  private static final long serialVersionUID = 1L;
+  private static int id = 0;
+
   //postion x
   private int x;
   //position y
@@ -12,10 +21,12 @@ public class Point {
   Point(final int x, final int y) {
     this.x = x;
     this.y = y;
+    this.id +=1;
   }
   public Point() {
     this.setX(0);
     this.setY(0);
+    this.id +=1;
   }
 
   //

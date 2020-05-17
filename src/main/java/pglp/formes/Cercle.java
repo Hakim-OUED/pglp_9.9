@@ -1,6 +1,20 @@
 package pglp.formes;
 
-public class Cercle extends Forme {
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+/**
+ * Classe implementant la forme Cercle
+ */
+public class Cercle extends Forme implements Serializable {
+
+  /**
+   * uid Serial.
+   */
+  private static final long serialVersionUID = 1L;
+  private static int id = 0;
 
    //le centre
   private Point centre;
@@ -28,6 +42,7 @@ public class Cercle extends Forme {
     super(nom);
     this.centre = new Point(x,y);
     this.rayon = rayon;
+    this.id +=1;
   }
 
   /**
@@ -49,4 +64,6 @@ public class Cercle extends Forme {
         + this.centre
         +"),rayon="+this.rayon+")";
   }
+
+
 }

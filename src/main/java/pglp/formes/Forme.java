@@ -1,11 +1,18 @@
 package pglp.formes;
 
+import java.io.Serializable;
+
 /**
  * Classe abstraite des formes
  */
 public abstract class Forme {
 
+
   private String identifiant;
+
+  public String getIdentifiant() {
+    return identifiant;
+  }
 
   public Forme(String id) {
     this.identifiant = id;

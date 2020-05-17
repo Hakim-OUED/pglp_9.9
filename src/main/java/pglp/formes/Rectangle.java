@@ -1,6 +1,18 @@
 package pglp.formes;
 
-public class Rectangle extends Forme {
+import java.io.Serializable;
+
+/**
+ * Classe implementant la forme Rectangle
+ */
+
+public class Rectangle extends Forme implements Serializable {
+
+  /**
+   * uid Serial.
+   */
+  private static final long serialVersionUID = 1L;
+  private static int id = 0;
 
   //origine du rectangle (le point en haut à gauche)
   private Point origine;
@@ -42,6 +54,7 @@ public class Rectangle extends Forme {
      this.origine = new Point(x,y);
     this.lon = longueur;
     this.lar = largeur;
+    this.id +=1;
   }
 
   @Override

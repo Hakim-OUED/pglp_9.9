@@ -3,15 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="40a8daf1-0c91-4652-8b38-8f5139200c9b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/formes/Carre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/formes/Carre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/formes/Cercle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/formes/Cercle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/formes/Forme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/formes/Forme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/formes/FormeGroupe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/formes/FormeGroupe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pglp/formes/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/formes/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/formes/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/formes/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pglp/formes/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/formes/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pglp/formes/CarreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pglp/formes/CarreTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pglp/formes/CercleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pglp/formes/CercleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pglp/formes/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pglp/formes/RectangleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pglp/formes/TriangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pglp/formes/TriangleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pglp/formes/Carre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pglp/formes/Carre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pglp/formes/Cercle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pglp/formes/Cercle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pglp/formes/Forme.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pglp/formes/Forme.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pglp/formes/FormeGroupe.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pglp/formes/FormeGroupe.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pglp/formes/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pglp/formes/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pglp/formes/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pglp/formes/Rectangle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pglp/formes/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pglp/formes/Triangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pglp/formes/CarreTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pglp/formes/CarreTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pglp/formes/FormeGroupeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pglp/formes/FormeGroupeTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +41,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -66,13 +73,45 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="pglp.dao" />
       <recent name="pglp.formes" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FormeGroupeTest.remove">
+  <component name="RunManager" selected="JUnit.CercleDaoTest">
+    <configuration name="CercleDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pglp_9.9" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pglp.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pglp.dao" />
+      <option name="MAIN_CLASS_NAME" value="pglp.dao.CercleDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CercleDaoTest.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pglp_9.9" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pglp.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pglp.dao" />
+      <option name="MAIN_CLASS_NAME" value="pglp.dao.CercleDaoTest" />
+      <option name="METHOD_NAME" value="testGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FormeGroupeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pglp_9.9" />
       <extension name="coverage">
@@ -120,43 +159,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RectangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pglp_9.9" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pglp.formes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pglp.formes" />
-      <option name="MAIN_CLASS_NAME" value="pglp.formes.RectangleTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TriangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pglp_9.9" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pglp.formes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pglp.formes" />
-      <option name="MAIN_CLASS_NAME" value="pglp.formes.TriangleTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CercleDaoTest" />
+        <item itemvalue="JUnit.CercleDaoTest.testGet" />
         <item itemvalue="JUnit.FormeGroupeTest.remove" />
         <item itemvalue="JUnit.FormeGroupeTest.testAddContient" />
         <item itemvalue="JUnit.FormeGroupeTest" />
-        <item itemvalue="JUnit.TriangleTest" />
-        <item itemvalue="JUnit.RectangleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +192,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589362971120</updated>
       <workItem from="1589362976719" duration="245000" />
-      <workItem from="1589471748894" duration="29358000" />
+      <workItem from="1589471748894" duration="75024000" />
     </task>
     <servers />
   </component>
@@ -191,53 +200,53 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1589565280366">
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1589721337200">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1589565280366" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1589579014249">
+    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1589721337200" />
+    <state width="1323" height="267" key="GridCell.Tab.0.bottom" timestamp="1589736161326">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589579014249" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1589579014249">
+    <state width="1323" height="267" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589736161326" />
+    <state width="1323" height="267" key="GridCell.Tab.0.center" timestamp="1589736161326">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589579014249" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1589579014249">
+    <state width="1323" height="267" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589736161326" />
+    <state width="1323" height="267" key="GridCell.Tab.0.left" timestamp="1589736161326">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589579014249" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1589579014249">
+    <state width="1323" height="267" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589736161326" />
+    <state width="1323" height="267" key="GridCell.Tab.0.right" timestamp="1589736161326">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589579014249" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1589577411327">
+    <state width="1323" height="267" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589736161326" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1589715467280">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589577411327" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1589577411326">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589715467280" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1589715467280">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1589577411326" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1589577411326">
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1589715467280" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1589715467280">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1589577411326" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1589577411327">
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1589715467280" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1589715467280">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1589577411327" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1589715467280" />
     <state x="379" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1589472075504">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="379" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589472075504" />
-    <state x="454" y="66" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589565750823">
+    <state x="454" y="66" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589718346843">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="454" y="66" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1589565750823" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1589550204447">
+    <state x="454" y="66" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1589718346843" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1589714241809">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1589550204447" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1589714241809" />
   </component>
 </project>

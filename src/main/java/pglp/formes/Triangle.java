@@ -1,6 +1,18 @@
 package pglp.formes;
 
-public class Triangle extends Forme {
+import java.io.Serializable;
+
+/**
+ * Classe implementant la forme Triangle
+ */
+public class Triangle extends Forme implements Serializable {
+
+  /**
+   * uid Serial.
+   */
+  private static final long serialVersionUID = 1L;
+  private static int id = 0;
+
   //Point origine
   private Point point1;
   // deuxième Point
@@ -40,6 +52,7 @@ public class Triangle extends Forme {
     this.point1 = new Point(x1,y1);
     this.point2 = new Point(x2,y2);
     this.point3 = new Point(x3,y3);
+    this.id +=1;
   }
 
   /**

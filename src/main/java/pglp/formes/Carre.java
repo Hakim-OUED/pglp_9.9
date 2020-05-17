@@ -1,6 +1,18 @@
 package pglp.formes;
 
-public class Carre extends Forme {
+import java.io.Serializable;
+
+/**
+ * Classe implementant la forme Carré
+ */
+public class Carre extends Forme implements Serializable {
+
+  /**
+   * uid Serial.
+   */
+  private static final long serialVersionUID = 1L;
+  private static int id = 0;
+
   //Origine du carré (le point en haut à gauche)
   private Point origine;
 
@@ -31,6 +43,7 @@ public class Carre extends Forme {
     super(nom);
     this.origine = new Point(x,y);
     this.cote = cote;
+    this.id +=1;
   }
 
   @Override
