@@ -16,7 +16,9 @@ public abstract class Dao<T> {
   PreparedStatement psSelect;
   ResultSet rs = null;
   static final String SQL_SERIALIZE_OBJECT = "INSERT INTO dessin(id, objet, description) VALUES (?,?,?)";
-  static final String SQL_DESERIALIZE_OBJECT = "SELECT objet FROM dessin WHERE id = ?";
+  static final String SQL_DESERIALIZE_OBJECT = "SELECT * FROM dessin WHERE id = ?";
+  static final String SQL_UPDATE_OBJECT = "UPDATE dessin set objet = ? , description = ? WHERE id = ?";
+  static final String SQL_DELETE_OBJECT = "DELETE FROM dessin WHERE id = ?";
 
 
   public Dao() {
@@ -25,14 +27,14 @@ public abstract class Dao<T> {
 
 
 
-  abstract T get(String nom) throws SQLException, IOException, ClassNotFoundException;
+  public abstract T get(String nom) throws SQLException, IOException, ClassNotFoundException;
 
-  abstract List<T> getAll();
+  public abstract List<T> getAll();
 
-  abstract void create(T t) throws SQLException, IOException, ClassNotFoundException;
+  public abstract void create(T t) throws SQLException, IOException, ClassNotFoundException;
 
-  abstract void update(T t, String[] params);
+  public abstract void update(T t) throws IOException, SQLException;
 
-  abstract void delete(T t);
+  public abstract void delete(T t) throws SQLException;
 
 }

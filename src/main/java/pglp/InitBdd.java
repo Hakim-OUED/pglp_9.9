@@ -23,7 +23,7 @@ public abstract class InitBdd {
           + ";create=true", props);
       s = conn.createStatement();
       statements.add(s);
-      s.execute("create table dessin(id varchar(20), objet CHAR(254) FOR BIT DATA, description varchar(100))");
+      s.execute("create table dessin(id varchar(20), objet BLOB, description varchar(100))");
 
 
       //s.execute("drop table dessin");

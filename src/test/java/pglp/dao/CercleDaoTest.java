@@ -5,9 +5,13 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import pglp.InitBdd;
 import pglp.formes.Cercle;
+import pglp.formes.Forme;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Properties;
 
 import static org.junit.Assert.*;
 
@@ -17,12 +21,16 @@ public class CercleDaoTest {
   static Dao<Cercle> dao;
 
   @BeforeClass
-  public static void init(){
-    System.out.println("1");
-    Dao.conn = InitBdd.getConn();
+  public static void init() throws SQLException {
+    Properties props = new Properties(); // connection properties
+    props.put("user", "user");
+    props.put("password", "user");
+    Connection conn = DriverManager.getConnection("jdbc:derby:dessins", props);
+    Dao.conn = conn;
 
-    c1 = new Cercle("c1",2,4,6);
+    c1 = new Cercle("c3",2,4,6);
     dao = DaoFactory.getDaoCercle();
+
   }
 
 
@@ -34,8 +42,21 @@ public class CercleDaoTest {
 
   @Test
   public void testGet() throws IOException, SQLException, ClassNotFoundException {
-    Cercle c = dao.get("c1");
+    Cercle c = dao.get("c3");
+    //System.out.println(c.getClass().getSimpleName());
   }
 
 
+  @Test
+  public void testUpdate() throws IOException, SQLException, ClassNotFoundException {
+    c1 = new Cercle("c3",2,1,4);
+    dao.update(c1);
+    dao.get("c3");
+
+  }
+
+  @Test
+  public void testDelete() {
+
+  }
 }

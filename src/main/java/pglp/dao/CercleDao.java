@@ -16,21 +16,9 @@ public class CercleDao extends Dao<Cercle> {
   public CercleDao(){
 
   }
-  public byte[] toByte(Cercle cercle) throws IOException, ClassNotFoundException {
-    ByteArrayOutputStream out = new ByteArrayOutputStream();
-    ObjectOutputStream os = new ObjectOutputStream(out);
-    os.writeObject(cercle);
-    ObjectInputStream objectIn = null;
-    objectIn = new ObjectInputStream(new ByteArrayInputStream( out.toByteArray()));
-    System.out.println(objectIn.readObject());
-    return null;
-
-  }
-
-
 
   @Override
-  Cercle get(String nom) throws SQLException, IOException, ClassNotFoundException {
+  public Cercle get(String nom) throws SQLException, IOException, ClassNotFoundException {
     Cercle cercle = null;
     psSelect = conn
         .prepareStatement(SQL_DESERIALIZE_OBJECT);
@@ -40,45 +28,75 @@ public class CercleDao extends Dao<Cercle> {
 
     // Object object = rs.getObject(1);
 
-    byte[] buf = rs.getBytes("objet");
-    ObjectInputStream objectIn = null;
-    if (buf != null)
-      objectIn = new ObjectInputStream(new ByteArrayInputStream(buf));
-    //cercle = (Cercle)
-    System.out.println(buf);
+    byte[] b = rs.getBytes(2);
+    String n = rs.getString("description");
+    ByteArrayInputStream is = new ByteArrayInputStream(b);
+    ObjectInputStream ois = new ObjectInputStream(is);
+    cercle = (Cercle) ois.readObject();
+    //cercle = (Cercle) rs.getObject(2);
+    cercle.setIdentifiant(nom);
+    System.out.println(cercle.toString());
     rs.close();
+    is.close();
+    ois.close();
     psSelect.close();
     return cercle;
   }
 
 
   @Override
-  List<Cercle> getAll() {
+  public List<Cercle> getAll() {
     return null;
   }
 
   @Override
-  void create(Cercle cercle) throws SQLException, IOException, ClassNotFoundException {
+  public void create(Cercle cercle) throws SQLException, IOException, ClassNotFoundException {
 
     psInsert = conn.prepareStatement(SQL_SERIALIZE_OBJECT);
     statements.add(psInsert);
     //Object obj = (Object) cercle;
+
+    ByteArrayOutputStream out = new ByteArrayOutputStream();
+    ObjectOutputStream os = new ObjectOutputStream(out);
+    os.writeObject(cercle);
+    byte [] b = out.toByteArray();
+    ByteArrayInputStream objectIn = new ByteArrayInputStream(b);
+
     psInsert.setString(1, cercle.getIdentifiant());
-    psInsert.setBytes(2, this.toByte(cercle) );
+    psInsert.setBinaryStream(2, objectIn,b.length );
     psInsert.setString(3,cercle.toString());
     psInsert.executeUpdate();
-    System.out.println(this.toByte(cercle));
+    System.out.println(objectIn);
+    objectIn.close();
+    os.flush();
+    os.close();
+    out.reset();
+    out.close();
     }
 
 
 
   @Override
-  void update(Cercle cercle, String[] params) {
+  public void update(Cercle cercle) throws IOException, SQLException {
+    ByteArrayOutputStream out = new ByteArrayOutputStream();
+    ObjectOutputStream os = new ObjectOutputStream(out);
+    os.writeObject(cercle);
+    byte [] b = out.toByteArray();
+    ByteArrayInputStream objectIn = new ByteArrayInputStream(b);
+    psUpdate = conn.prepareStatement(
+        SQL_UPDATE_OBJECT);
+    psUpdate.setBinaryStream(1,objectIn,b.length );
+    psUpdate.setString(2, cercle.toString());
+    psUpdate.setString(3, cercle.getIdentifiant());
+    psUpdate.executeUpdate();
 
   }
 
   @Override
-  void delete(Cercle cercle) {
-
+  public void delete(Cercle cercle) throws SQLException {
+    psUpdate = conn.prepareStatement(
+        SQL_DELETE_OBJECT);
+    psUpdate.setString(1, cercle.getIdentifiant());
+    psUpdate.executeUpdate();
   }
 }

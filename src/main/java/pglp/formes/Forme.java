@@ -5,8 +5,12 @@ import java.io.Serializable;
 /**
  * Classe abstraite des formes
  */
-public abstract class Forme {
+public abstract class Forme implements Serializable{
 
+
+  public void setIdentifiant(String identifiant) {
+    this.identifiant = identifiant;
+  }
 
   private String identifiant;
 
