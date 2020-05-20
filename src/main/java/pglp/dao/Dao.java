@@ -1,5 +1,7 @@
 package pglp.dao;
 
+import pglp.exceptions.KeyAlreadyExistException;
+
 import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
@@ -31,7 +33,7 @@ public abstract class Dao<T> {
 
   public abstract List<T> getAll();
 
-  public abstract void create(T t) throws SQLException, IOException, ClassNotFoundException;
+  public abstract void create(T t) throws SQLException, IOException, ClassNotFoundException, KeyAlreadyExistException;
 
   public abstract void update(T t) throws IOException, SQLException;
 

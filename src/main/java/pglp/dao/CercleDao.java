@@ -1,5 +1,7 @@
 package pglp.dao;
 
+import pglp.Helper;
+import pglp.exceptions.KeyAlreadyExistException;
 import pglp.formes.Cercle;
 
 import java.io.*;
@@ -29,7 +31,6 @@ public class CercleDao extends Dao<Cercle> {
     // Object object = rs.getObject(1);
 
     byte[] b = rs.getBytes(2);
-    String n = rs.getString("description");
     ByteArrayInputStream is = new ByteArrayInputStream(b);
     ObjectInputStream ois = new ObjectInputStream(is);
     cercle = (Cercle) ois.readObject();
@@ -50,8 +51,9 @@ public class CercleDao extends Dao<Cercle> {
   }
 
   @Override
-  public void create(Cercle cercle) throws SQLException, IOException, ClassNotFoundException {
-
+  public void create(Cercle cercle) throws IOException,
+      ClassNotFoundException, KeyAlreadyExistException, SQLException {
+    try {
     psInsert = conn.prepareStatement(SQL_SERIALIZE_OBJECT);
     statements.add(psInsert);
     //Object obj = (Object) cercle;
@@ -61,17 +63,24 @@ public class CercleDao extends Dao<Cercle> {
     os.writeObject(cercle);
     byte [] b = out.toByteArray();
     ByteArrayInputStream objectIn = new ByteArrayInputStream(b);
+      psInsert.setString(1, cercle.getIdentifiant());
+      psInsert.setBinaryStream(2, objectIn,b.length );
+      psInsert.setString(3,cercle.toString());
+      psInsert.executeUpdate();
+      System.out.println(objectIn);
+      objectIn.close();
+      os.flush();
+      os.close();
+      out.reset();
+      out.close();
 
-    psInsert.setString(1, cercle.getIdentifiant());
-    psInsert.setBinaryStream(2, objectIn,b.length );
-    psInsert.setString(3,cercle.toString());
-    psInsert.executeUpdate();
-    System.out.println(objectIn);
-    objectIn.close();
-    os.flush();
-    os.close();
-    out.reset();
-    out.close();
+    } catch (SQLException e) {
+      if (Helper.keyExist(e)){
+        throw new KeyAlreadyExistException();
+      }
+      else throw e;
+    }
+
     }
 
 

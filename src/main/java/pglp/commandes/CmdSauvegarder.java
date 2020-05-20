@@ -2,6 +2,7 @@ package pglp.commandes;
 
 import pglp.dao.Dao;
 import pglp.dao.DaoFactory;
+import pglp.exceptions.KeyAlreadyExistException;
 import pglp.formes.Cercle;
 import pglp.formes.Forme;
 
@@ -15,7 +16,7 @@ public class CmdSauvegarder implements Commande {
   public static String identifiant;
 
   @Override
-  public void execute() throws SQLException, IOException, ClassNotFoundException {
+  public void execute() throws SQLException, IOException, ClassNotFoundException, KeyAlreadyExistException {
     if (CmdCreer.formes.containsKey(identifiant)){
       Forme forme = CmdCreer.formes.get(identifiant);
       Dao dao = DaoFactory.create(forme.getClass().getName());

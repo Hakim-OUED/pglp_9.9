@@ -1,6 +1,7 @@
 package pglp.commandes;
 
 
+import pglp.exceptions.KeyAlreadyExistException;
 import pglp.exceptions.UnknowFormException;
 import pglp.formes.Forme;
 
@@ -13,7 +14,7 @@ public interface Commande {
    * @author Hakim OUED
    * @since 17/03/2020
    */
-  void execute() throws UnknowFormException, SQLException, IOException, ClassNotFoundException;
+  void execute() throws UnknowFormException, SQLException, IOException, ClassNotFoundException, KeyAlreadyExistException;
 
 }
 

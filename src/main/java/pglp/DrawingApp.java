@@ -1,6 +1,7 @@
 package pglp;
 
 import pglp.commandes.Commande;
+import pglp.exceptions.KeyAlreadyExistException;
 import pglp.exceptions.UnknowFormException;
 
 import java.io.IOException;
@@ -13,7 +14,7 @@ public class DrawingApp {
    * @param args ensemble d'arguments
    * @throws IOException Exception des saisies
    */
-  public static void run(final String args) throws IOException, UnknowFormException, SQLException, ClassNotFoundException {
+  public static void run(final String args) throws IOException, UnknowFormException, SQLException, ClassNotFoundException, KeyAlreadyExistException {
 
     DrawingTUI drawingTUI = new DrawingTUI();
     Commande cmd;

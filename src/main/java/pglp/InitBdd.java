@@ -23,16 +23,28 @@ public abstract class InitBdd {
           + ";create=true", props);
       s = conn.createStatement();
       statements.add(s);
-      s.execute("create table dessin(id varchar(20), objet BLOB, description varchar(100))");
-
-
-      //s.execute("drop table dessin");
 
     } catch (SQLException e) {
       System.out.println("Erreur de connexion à la BD");
       e.printStackTrace();
     }
     return conn;
+  }
+
+  public static void createTables() throws SQLException {
+    try {
+      s.execute("create table dessin(id varchar(20)," +
+          " objet BLOB, description varchar(100)," +
+          "PRIMARY KEY (id))");
+    } catch (SQLException e) {
+      if(Helper.tableExist(e)) {
+        return;
+      }
+      throw e;
+    }
+
+
+    //s.execute("drop table dessin");
   }
 
 }
