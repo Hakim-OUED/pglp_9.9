@@ -1,55 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40a8daf1-0c91-4652-8b38-8f5139200c9b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/db.lck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/log/log1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/log/logmirror.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c10.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c101.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c101.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c111.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c111.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c121.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c121.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c130.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c130.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c141.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c141.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c180.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c180.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c1a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c1a1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c1b1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c1b1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c20.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c230.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c241.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c31.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c31.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c380.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c380.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c391.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c391.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c3a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c3a1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c3b1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c3b1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c41.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c41.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c490.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c490.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c51.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c51.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c60.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c71.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c71.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c81.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c81.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/c90.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c90.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/ca1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/cb1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/cc0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/cc0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/ce1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/ce1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/seg0/cf0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/cf0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessins/service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/service.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/InitBdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/InitBdd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/dao/CercleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/dao/CercleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/dao/Dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pglp/dao/CercleDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pglp/dao/CercleDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/pglp_9.9.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pglp/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pglp/DrawingApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pglp/DrawingApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pglp/InitBdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pglp/InitBdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pglp/dao/CercleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pglp/dao/CercleDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pglp/dao/CercleDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pglp/dao/CercleDaoTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="40a8daf1-0c91-4652-8b38-8f5139200c9b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -224,7 +176,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589362971120</updated>
       <workItem from="1589362976719" duration="245000" />
-      <workItem from="1589471748894" duration="109982000" />
+      <workItem from="1589471748894" duration="110324000" />
     </task>
     <servers />
   </component>
