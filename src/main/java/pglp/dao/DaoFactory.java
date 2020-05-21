@@ -7,19 +7,25 @@ public class DaoFactory {
   private DaoFactory() {
   }
   public static Dao get(String forme){
-    Dao dao = null;
+
+    Dao dao;
     switch (forme) {
       case "Cercle":
         dao = new CercleDao();
         break;
       case "Carre":
         dao = new CarreDao();
+        break;
       case "Rectangle":
         dao = new RectangleDao();
+        break;
       case "Triangle":
         dao = new TriangleDao();
+        break;
       case "FormeGroup":
         dao = new FormeGroupeDao();
+        break;
+      default: dao =null;
     }
     return dao;
   }

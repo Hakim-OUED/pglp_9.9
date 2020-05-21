@@ -46,7 +46,6 @@ public class TriangleDao extends Dao<Triangle> {
     os.writeObject(triangle);
     byte [] b = out.toByteArray();
     ByteArrayInputStream objectIn = new ByteArrayInputStream(b);
-
     psInsert.setString(1, triangle.getIdentifiant());
     psInsert.setBinaryStream(2, objectIn,b.length );
     psInsert.setString(3,triangle.toString());
