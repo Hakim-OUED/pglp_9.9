@@ -44,7 +44,7 @@ public class CercleDaoTest {
 
   @Test
   public void testGet() throws IOException, SQLException, ClassNotFoundException {
-    Cercle c = dao.get("c1");
+    Cercle c = (Cercle) dao.get("c1");
     //System.out.println(c.getClass().getSimpleName());
   }
 

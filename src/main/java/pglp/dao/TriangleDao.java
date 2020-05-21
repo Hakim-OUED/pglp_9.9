@@ -1,6 +1,7 @@
 package pglp.dao;
 
 
+import pglp.formes.Forme;
 import pglp.formes.Triangle;
 
 import java.io.*;
@@ -9,24 +10,18 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class TriangleDao extends Dao<Triangle> {
-  @Override
-  public Triangle get(String nom) throws SQLException, IOException, ClassNotFoundException {
+
+  public Triangle getSpecific(String nom) throws SQLException, IOException, ClassNotFoundException {
     Triangle triangle = null;
     psSelect = conn
         .prepareStatement(SQL_DESERIALIZE_OBJECT);
     psSelect.setString(1, nom);
     ResultSet rs = psSelect.executeQuery();
     rs.next();
-
-    // Object object = rs.getObject(1);
-
     byte[] b = rs.getBytes(2);
-    String n = rs.getString("description");
     ByteArrayInputStream is = new ByteArrayInputStream(b);
     ObjectInputStream ois = new ObjectInputStream(is);
     triangle = (Triangle) ois.readObject();
-    //cercle = (Cercle) rs.getObject(2);
-    triangle.setIdentifiant(nom);
     System.out.println(triangle.toString());
     rs.close();
     is.close();

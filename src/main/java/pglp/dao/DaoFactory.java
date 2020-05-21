@@ -6,7 +6,7 @@ public class DaoFactory {
 
   private DaoFactory() {
   }
-  public static Dao  create(String forme){
+  public static Dao get(String forme){
     Dao dao = null;
     switch (forme) {
       case "Cercle":

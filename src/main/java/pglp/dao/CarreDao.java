@@ -11,23 +11,18 @@ public class CarreDao extends Dao<Carre> {
 
 
   @Override
-  public Carre get(String nom) throws SQLException, IOException, ClassNotFoundException {
+  public Carre getSpecific(String nom) throws SQLException, IOException,
+      ClassNotFoundException {
     Carre carre = null;
     psSelect = conn
         .prepareStatement(SQL_DESERIALIZE_OBJECT);
     psSelect.setString(1, nom);
     ResultSet rs = psSelect.executeQuery();
     rs.next();
-
-    // Object object = rs.getObject(1);
-
     byte[] b = rs.getBytes(2);
-    String n = rs.getString("description");
     ByteArrayInputStream is = new ByteArrayInputStream(b);
     ObjectInputStream ois = new ObjectInputStream(is);
     carre = (Carre) ois.readObject();
-    //cercle = (Cercle) rs.getObject(2);
-    carre.setIdentifiant(nom);
     System.out.println(carre.toString());
     rs.close();
     is.close();

@@ -1,5 +1,6 @@
 package pglp.dao;
 
+import pglp.formes.Forme;
 import pglp.formes.Rectangle;
 
 import java.io.*;
@@ -9,7 +10,7 @@ import java.util.List;
 
 public class RectangleDao extends Dao<Rectangle> {
   @Override
-  public Rectangle get(String nom) throws SQLException, IOException, ClassNotFoundException {
+  public Rectangle getSpecific(String nom) throws SQLException, IOException, ClassNotFoundException {
     Rectangle rectangle = null;
     psSelect = conn
         .prepareStatement(SQL_DESERIALIZE_OBJECT);
@@ -20,12 +21,9 @@ public class RectangleDao extends Dao<Rectangle> {
     // Object object = rs.getObject(1);
 
     byte[] b = rs.getBytes(2);
-    String n = rs.getString("description");
     ByteArrayInputStream is = new ByteArrayInputStream(b);
     ObjectInputStream ois = new ObjectInputStream(is);
     rectangle = (Rectangle) ois.readObject();
-    //cercle = (Cercle) rs.getObject(2);
-    rectangle.setIdentifiant(nom);
     System.out.println(rectangle.toString());
     rs.close();
     is.close();

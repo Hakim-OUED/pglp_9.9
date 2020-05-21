@@ -7,7 +7,8 @@ import java.sql.SQLException;
 
 public class CmdHelp implements Commande {
   @Override
-  public void execute() throws UnknowFormException, SQLException, IOException, ClassNotFoundException {
+  public String execute() throws UnknowFormException, SQLException, IOException, ClassNotFoundException {
 
+    return null;
   }
 }

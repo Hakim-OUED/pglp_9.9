@@ -3,14 +3,11 @@ package pglp.dao;
 import pglp.Helper;
 import pglp.exceptions.KeyAlreadyExistException;
 import pglp.formes.Cercle;
+import pglp.formes.Forme;
 
 import java.io.*;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.Properties;
 import java.util.List;
-
-import static java.sql.JDBCType.BLOB;
 
 
 public class CercleDao extends Dao<Cercle> {
@@ -20,22 +17,17 @@ public class CercleDao extends Dao<Cercle> {
   }
 
   @Override
-  public Cercle get(String nom) throws SQLException, IOException, ClassNotFoundException {
+  public Cercle getSpecific(String nom) throws SQLException, IOException, ClassNotFoundException {
     Cercle cercle = null;
     psSelect = conn
         .prepareStatement(SQL_DESERIALIZE_OBJECT);
     psSelect.setString(1, nom);
     ResultSet rs = psSelect.executeQuery();
     rs.next();
-
-    // Object object = rs.getObject(1);
-
     byte[] b = rs.getBytes(2);
     ByteArrayInputStream is = new ByteArrayInputStream(b);
     ObjectInputStream ois = new ObjectInputStream(is);
     cercle = (Cercle) ois.readObject();
-    //cercle = (Cercle) rs.getObject(2);
-    cercle.setIdentifiant(nom);
     System.out.println(cercle.toString());
     rs.close();
     is.close();
