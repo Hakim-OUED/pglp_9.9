@@ -38,7 +38,7 @@ public class CmdCreate implements Commande {
    * Il initialise les variale et la liste des paramètres
    * @param params
    */
-  public CmdCreate(String[] params){
+  public CmdCreate(final String[] params){
     nomForme = params[0];
     parametres = params[1];
     Pattern p = Pattern.compile("-?\\d+");

@@ -3,6 +3,8 @@ package pglp;
 import pglp.commandes.*;
 import pglp.exceptions.UnknowCommandException;
 
+import java.io.IOException;
+import java.util.Scanner;
 import java.util.regex.Pattern;
 
 
@@ -16,10 +18,13 @@ public class DrawingTUI {
     String regExQuit ="^(quit)";
     String regExHelp ="^(help)";
 
+    private Scanner scanner = new Scanner(System.in);
 
 
-    public Commande nextCommand(String string) throws UnknowCommandException {
-        String saisie = string.toLowerCase().trim();
+
+    public Commande nextCommand() throws UnknowCommandException, IOException {
+        System.out.println("En attente d'une Commande> ");
+        String saisie = scanner.nextLine().toLowerCase();
         saisie = saisie.replaceAll("\\s+","");
         String parametres;
         if (Pattern.matches(regExCreate,saisie)){
@@ -43,21 +48,18 @@ public class DrawingTUI {
             parametres  = saisie.substring(5,saisie.length()-1);
             Pattern p = Pattern.compile(",");
             String[] params = p.split(parametres,2);
-            return new CmdCreate(params);
-
+            return new CmdMove(params);
         }
         else if (Pattern.matches(regExHelp,saisie)){
             System.out.println("quithelp");
+            return new CmdHelp();
         }
         else if (Pattern.matches(regExQuit,saisie)){
-            System.out.println("quit");
+            return new CmdQuit();
         }
         else {
             throw new UnknowCommandException();
         }
-        return null;
-
-
     }
 
     public void afficher(String id){

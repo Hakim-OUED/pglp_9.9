@@ -9,8 +9,8 @@ import java.util.regex.Pattern;
 
 public class CmdMove implements Commande {
 
-  public static List<Integer> parsedParams= new ArrayList();
-  public static String identifiant;
+  private static List<Integer> parsedParams= new ArrayList();
+  private static String identifiant;
 
   public CmdMove(String[] params){
     identifiant = params[0];

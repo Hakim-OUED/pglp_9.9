@@ -12,7 +12,6 @@ import java.util.List;
 
 public abstract class Dao<T> {
 
-  public String nomBd;
   public static Connection conn = null;
   ArrayList<Statement> statements = new ArrayList<Statement>();
   PreparedStatement psInsert;
@@ -49,7 +48,7 @@ public abstract class Dao<T> {
 
   public abstract List<T> getAll();
   public abstract T getSpecific(String id) throws SQLException, IOException, ClassNotFoundException;
-  public abstract void create(T t) throws SQLException, IOException, ClassNotFoundException, KeyAlreadyExistException;
+  public abstract String create(T t) throws SQLException, IOException, ClassNotFoundException, KeyAlreadyExistException;
 
   public abstract void update(T t) throws IOException, SQLException;
 

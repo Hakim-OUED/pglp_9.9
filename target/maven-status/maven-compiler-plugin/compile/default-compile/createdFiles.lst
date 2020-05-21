@@ -1,0 +1,9 @@
+pglp\commandes\CmdCreate.class
+pglp\commandes\CmdShow.class
+pglp\DrawingApp.class
+pglp\commandes\CmdLoad.class
+pglp\DrawingTUI.class
+pglp\commandes\CmdHelp.class
+pglp\formes\FormeGroupe.class
+pglp\exceptions\UnknowCommandException.class
+pglp\dao\FormeGroupeDao.class

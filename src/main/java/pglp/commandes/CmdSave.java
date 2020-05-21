@@ -21,9 +21,9 @@ public class CmdSave implements Commande {
   public String execute() throws SQLException, IOException, ClassNotFoundException, KeyAlreadyExistException, DrawingNotExistException {
     if (CmdCreate.formes.containsKey(identifiant)){
       Forme forme = CmdCreate.formes.get(identifiant);
-      Dao dao = DaoFactory.get(forme.getClass().getName());
-      dao.create(forme);
-      return String.valueOf('1');
+      Dao dao = DaoFactory.get(forme.getClass().getSimpleName());
+
+      return dao.create(forme);
     } else throw new DrawingNotExistException();
 
   }

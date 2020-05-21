@@ -6,7 +6,7 @@ import java.util.Properties;
 
 public abstract class InitBdd {
 
-  static String nomBd;
+  final static String nomBd ="dessins";
   static Connection conn = null;
   static ArrayList<Statement> statements = new ArrayList<Statement>();
   static Statement s;
@@ -17,7 +17,6 @@ public abstract class InitBdd {
     Properties props = new Properties(); // connection properties
     props.put("user", "user");
     props.put("password", "user");
-    nomBd = "dessins";
     try {
       conn = DriverManager.getConnection("jdbc:derby:" + nomBd
           + ";create=true", props);
@@ -25,8 +24,8 @@ public abstract class InitBdd {
       statements.add(s);
 
     } catch (SQLException e) {
-      System.out.println("Erreur de connexion à la BD");
-      e.printStackTrace();
+      System.out.println("Erreur de connexion à la Base de donnée");
+      System.out.println(e.getMessage());
     }
     return conn;
   }
@@ -39,8 +38,7 @@ public abstract class InitBdd {
     } catch (SQLException e) {
       if(Helper.tableExist(e)) {
         return;
-      }
-      throw e;
+      } else throw e;
     }
 
 

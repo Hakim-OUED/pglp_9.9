@@ -1,6 +1,5 @@
 package pglp.dao;
 
-import pglp.formes.Forme;
 import pglp.formes.FormeGroupe;
 
 
@@ -23,7 +22,6 @@ public class FormeGroupeDao extends Dao<FormeGroupe> {
     ObjectInputStream ois = new ObjectInputStream(is);
     formeGroupe = (FormeGroupe) ois.readObject();
     formeGroupe.setIdentifiant(nom);
-    System.out.println(formeGroupe.toString());
     rs.close();
     is.close();
     ois.close();
@@ -38,7 +36,7 @@ public class FormeGroupeDao extends Dao<FormeGroupe> {
   }
 
   @Override
-  public void create(FormeGroupe formeGroupe) throws SQLException, IOException, ClassNotFoundException {
+  public String create(FormeGroupe formeGroupe) throws SQLException, IOException, ClassNotFoundException {
 
     psInsert = conn.prepareStatement(SQL_SERIALIZE_OBJECT);
     statements.add(psInsert);
@@ -52,12 +50,12 @@ public class FormeGroupeDao extends Dao<FormeGroupe> {
     psInsert.setBinaryStream(2, objectIn,b.length );
     psInsert.setString(3,formeGroupe.toString());
     psInsert.executeUpdate();
-    System.out.println(objectIn);
     objectIn.close();
     os.flush();
     os.close();
     out.reset();
     out.close();
+    return formeGroupe.getNom() + " a été bien sauvegardé";
   }
 
 

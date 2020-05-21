@@ -23,7 +23,6 @@ public class CarreDao extends Dao<Carre> {
     ByteArrayInputStream is = new ByteArrayInputStream(b);
     ObjectInputStream ois = new ObjectInputStream(is);
     carre = (Carre) ois.readObject();
-    System.out.println(carre.toString());
     rs.close();
     is.close();
     ois.close();
@@ -38,7 +37,7 @@ public class CarreDao extends Dao<Carre> {
   }
 
   @Override
-  public void create(Carre carre) throws SQLException, IOException, ClassNotFoundException {
+  public String create(Carre carre) throws SQLException, IOException, ClassNotFoundException {
 
     psInsert = conn.prepareStatement(SQL_SERIALIZE_OBJECT);
     statements.add(psInsert);
@@ -54,12 +53,12 @@ public class CarreDao extends Dao<Carre> {
     psInsert.setBinaryStream(2, objectIn,b.length );
     psInsert.setString(3,carre.toString());
     psInsert.executeUpdate();
-    System.out.println(objectIn);
     objectIn.close();
     os.flush();
     os.close();
     out.reset();
     out.close();
+    return carre.getIdentifiant() + " a été bien sauvegardé";
   }
 
 

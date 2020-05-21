@@ -3,7 +3,6 @@ package pglp.dao;
 import pglp.Helper;
 import pglp.exceptions.KeyAlreadyExistException;
 import pglp.formes.Cercle;
-import pglp.formes.Forme;
 
 import java.io.*;
 import java.sql.*;
@@ -28,7 +27,6 @@ public class CercleDao extends Dao<Cercle> {
     ByteArrayInputStream is = new ByteArrayInputStream(b);
     ObjectInputStream ois = new ObjectInputStream(is);
     cercle = (Cercle) ois.readObject();
-    System.out.println(cercle.toString());
     rs.close();
     is.close();
     ois.close();
@@ -43,13 +41,11 @@ public class CercleDao extends Dao<Cercle> {
   }
 
   @Override
-  public void create(Cercle cercle) throws IOException,
+  public String create(Cercle cercle) throws IOException,
       ClassNotFoundException, KeyAlreadyExistException, SQLException {
     try {
     psInsert = conn.prepareStatement(SQL_SERIALIZE_OBJECT);
     statements.add(psInsert);
-    //Object obj = (Object) cercle;
-
     ByteArrayOutputStream out = new ByteArrayOutputStream();
     ObjectOutputStream os = new ObjectOutputStream(out);
     os.writeObject(cercle);
@@ -59,7 +55,6 @@ public class CercleDao extends Dao<Cercle> {
       psInsert.setBinaryStream(2, objectIn,b.length );
       psInsert.setString(3,cercle.toString());
       psInsert.executeUpdate();
-      System.out.println(objectIn);
       objectIn.close();
       os.flush();
       os.close();
@@ -73,7 +68,8 @@ public class CercleDao extends Dao<Cercle> {
       else throw e;
     }
 
-    }
+    return cercle.getIdentifiant() + " a été bien sauvegardé";
+  }
 
 
 

@@ -1,7 +1,6 @@
 package pglp.dao;
 
 
-import pglp.formes.Forme;
 import pglp.formes.Triangle;
 
 import java.io.*;
@@ -22,7 +21,6 @@ public class TriangleDao extends Dao<Triangle> {
     ByteArrayInputStream is = new ByteArrayInputStream(b);
     ObjectInputStream ois = new ObjectInputStream(is);
     triangle = (Triangle) ois.readObject();
-    System.out.println(triangle.toString());
     rs.close();
     is.close();
     ois.close();
@@ -37,7 +35,7 @@ public class TriangleDao extends Dao<Triangle> {
   }
 
   @Override
-  public void create(Triangle triangle) throws SQLException, IOException, ClassNotFoundException {
+  public String create(Triangle triangle) throws SQLException, IOException, ClassNotFoundException {
 
     psInsert = conn.prepareStatement(SQL_SERIALIZE_OBJECT);
     statements.add(psInsert);
@@ -53,12 +51,12 @@ public class TriangleDao extends Dao<Triangle> {
     psInsert.setBinaryStream(2, objectIn,b.length );
     psInsert.setString(3,triangle.toString());
     psInsert.executeUpdate();
-    System.out.println(objectIn);
     objectIn.close();
     os.flush();
     os.close();
     out.reset();
     out.close();
+    return triangle.getIdentifiant() + " a été bien sauvegardé";
   }
 
 

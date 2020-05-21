@@ -1,0 +1,13 @@
+pglp\formes\TriangleTest.class
+pglp\formes\CercleTest.class
+pglp\commandes\CmdLoadTest.class
+pglp\commandes\CmdCreateTest.class
+pglp\formes\FormeGroupeTest.class
+pglp\DrawingTUITest.class
+pglp\formes\RectangleTest.class
+pglp\commandes\CmdShowTest.class
+pglp\dao\CercleDaoTest.class
+pglp\commandes\CmdMoveTest.class
+pglp\AppTest.class
+pglp\commandes\CmdSaveTest.class
+pglp\formes\CarreTest.class
