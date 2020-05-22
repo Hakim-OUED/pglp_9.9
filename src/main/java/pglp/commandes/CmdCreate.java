@@ -57,18 +57,21 @@ public class CmdCreate implements Commande {
       Carre carre = new Carre(nomForme, parsedParams.get(0), parsedParams.get(1),
           parsedParams.get(2));
       formes.put(nomForme, carre);
+      parsedParams.removeAll(parsedParams);
       status = 1;
       return String.valueOf(status);
     } else if (Pattern.matches(regExCreateCercle, parametres)) {
       Cercle cercle = new Cercle(nomForme, parsedParams.get(0), parsedParams.get(1),
           parsedParams.get(2));
       formes.put(nomForme, cercle);
+      parsedParams.removeAll(parsedParams);
       status = 1;
       return String.valueOf(status);
     } else if (Pattern.matches(regExCreateRectangle, parametres)) {
       Rectangle rectangle = new Rectangle(nomForme, parsedParams.get(0), parsedParams.get(1),
           parsedParams.get(2), parsedParams.get(3));
       formes.put(nomForme, rectangle);
+      parsedParams.removeAll(parsedParams);
       status = 1;
       return String.valueOf(status);
     } else if (Pattern.matches(regExCreateTriangle, parametres)) {
@@ -79,6 +82,7 @@ public class CmdCreate implements Commande {
       status = 1;
       return String.valueOf(status);
     } else {
+      parsedParams.removeAll(parsedParams);
       throw new UnknowFormException();
     }
 

@@ -39,6 +39,7 @@ public class CmdMove implements Commande {
       parsedParams.removeAll(parsedParams);
       return String.valueOf(1);
     } else {
+      parsedParams.removeAll(parsedParams);
       throw new UnloadedDrawingException(identifiant);
     }
   }

@@ -30,6 +30,7 @@ public class CmdGroup implements Commande {
   public String execute() throws UnknowFormException, SQLException, IOException, ClassNotFoundException, KeyAlreadyExistException, DrawingNotExistException, UnloadedDrawingException, DrawingAlreadyLoadException {
     for (String element : elements) {
       if (!CmdCreate.formes.containsKey(element)){
+        elements.removeAll(elements);
         throw new UnloadedDrawingException(element);
       }
     }
