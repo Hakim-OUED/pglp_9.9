@@ -1,7 +1,7 @@
 package pglp.exceptions;
 
 public class UnknowCommandException extends Exception {
-  public UnknowCommandException(){
+  public UnknowCommandException() {
     super("Syntaxe incorrecte ou Commande non pris en charge");
   }
 }

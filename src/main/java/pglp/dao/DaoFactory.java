@@ -6,7 +6,12 @@ public class DaoFactory {
 
   private DaoFactory() {
   }
-  public static Dao get(String forme){
+
+  /**
+   * retourne le DAO approprié en fonction de la classe.
+   * @return le DAO correspondant
+   */
+  public static Dao get(String forme) {
 
     Dao dao;
     switch (forme) {
@@ -22,10 +27,11 @@ public class DaoFactory {
       case "Triangle":
         dao = new TriangleDao();
         break;
-      case "FormeGroup":
+      case "FormeGroupe":
         dao = new FormeGroupeDao();
         break;
-      default: dao =null;
+      default:
+        dao = null;
     }
     return dao;
   }

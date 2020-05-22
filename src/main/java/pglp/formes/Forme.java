@@ -3,9 +3,9 @@ package pglp.formes;
 import java.io.Serializable;
 
 /**
- * Classe abstraite des formes
+ * Classe abstraite des formes.
  */
-public abstract class Forme implements Serializable{
+public abstract class Forme implements Serializable {
 
 
   public void setIdentifiant(String identifiant) {

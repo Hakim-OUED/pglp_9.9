@@ -3,7 +3,7 @@ package pglp.formes;
 import java.io.Serializable;
 
 /**
- * Classe implementant la forme Rectangle
+ * Classe implementant la forme Rectangle.
  */
 
 public class Rectangle extends Forme implements Serializable {
@@ -47,29 +47,38 @@ public class Rectangle extends Forme implements Serializable {
     this.lar = lar;
   }
 
+  /**
+   * Constructeur du rectangle.
+   * @param nom nom du dessin
+   * @param x abcisse de l'origine (Point en haut à gauche)
+   * @param y ordonnée de l'origine (Point en haut à gauche)
+   * @param longueur Longueur du rectangle
+   * @param largeur Largeur du rectangle
+   */
+
   public Rectangle(final String nom,
                    final int x, final int y,
-                   final int longueur, final int largeur){
-     super(nom);
-     this.origine = new Point(x,y);
+                   final int longueur, final int largeur) {
+    super(nom);
+    this.origine = new Point(x, y);
     this.lon = longueur;
     this.lar = largeur;
-    this.id +=1;
+    this.id += 1;
   }
 
   @Override
   public Forme deplacer(int nx, int ny) {
-    this.origine.deplacer(nx,ny);
+    this.origine.deplacer(nx, ny);
     return this;
   }
 
   @Override
   public String toString() {
     return super.toString()
-        +"-->Rectangle(" +
-        "origine=(" + origine +
-        "), lon=" + lon +
-        ", lar=" + lar +
-        ')';
+        + "-->Rectangle("
+        + "origine=(" + origine
+        + "), lon=" + lon
+        + ", lar=" + lar
+        + ')';
   }
 }

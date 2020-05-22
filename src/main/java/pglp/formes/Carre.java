@@ -3,7 +3,7 @@ package pglp.formes;
 import java.io.Serializable;
 
 /**
- * Classe implementant la forme Carré
+ * Classe implementant la forme Carré.
  */
 public class Carre extends Forme implements Serializable {
 
@@ -35,15 +35,20 @@ public class Carre extends Forme implements Serializable {
     this.cote = cote;
   }
 
-
-
-
+  /**
+   * Constructeur du carré.
+   *
+   * @param nom  nom du dessin.
+   * @param x    abcisse du point origine (Point en haut à gauche)
+   * @param y    ordonnée du point origine (Point en haut à gauche)
+   * @param cote coté du carré
+   */
   public Carre(final String nom, final int x,
                final int y, final int cote) {
     super(nom);
-    this.origine = new Point(x,y);
+    this.origine = new Point(x, y);
     this.cote = cote;
-    this.id +=1;
+    this.id += 1;
   }
 
   @Override
@@ -55,7 +60,8 @@ public class Carre extends Forme implements Serializable {
   }
 
   /**
-   * Deplace le carré à travers le point origine
+   * Deplace le carré à travers le point origine.
+   *
    * @param nx Nouvelle coordonnée X
    * @param ny Nouvelle coordonnée Y
    * @return le carré déplacé
@@ -63,7 +69,7 @@ public class Carre extends Forme implements Serializable {
 
   @Override
   public Forme deplacer(int nx, int ny) {
-    this.origine.deplacer(nx,ny);
+    this.origine.deplacer(nx, ny);
     return this;
   }
 }

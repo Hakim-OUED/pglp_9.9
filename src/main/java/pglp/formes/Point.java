@@ -3,7 +3,7 @@ package pglp.formes;
 import java.io.Serializable;
 
 /**
- *Classe Position
+ *Classe Position.
  */
 public class Point implements Serializable {
 
@@ -21,26 +21,24 @@ public class Point implements Serializable {
   Point(final int x, final int y) {
     this.x = x;
     this.y = y;
-    this.id +=1;
-  }
-  public Point() {
-    this.setX(0);
-    this.setY(0);
-    this.id +=1;
+    this.id += 1;
   }
 
   //
   public int getX() {
     return x;
   }
+
   //
   public void setX(final int x) {
     this.x = x;
   }
+
   //
   public int getY() {
     return y;
   }
+
   //
   public void setY(final int y) {
     this.y = y;
@@ -50,7 +48,7 @@ public class Point implements Serializable {
 
 
   /**
-   * deplacer l'abcisse du point
+   * deplacer l'abcisse du point.
    * @param nx nouvelle abcisse
    * @return la position
    */
@@ -66,7 +64,7 @@ public class Point implements Serializable {
   }
 
   /**
-   * Deplacer l'ordonée du point
+   * Deplacer l'ordonée du point.
    * @param ny nouvelle ordonéee
    * @return la point
    */
@@ -76,7 +74,7 @@ public class Point implements Serializable {
   }
 
   /**
-   * Deplacer les coordonées point
+   * Deplacer les coordonées point.
    * @param nx nouvelle abcisse
    * @param ny nouvelle ordonnée
    * @return  le point

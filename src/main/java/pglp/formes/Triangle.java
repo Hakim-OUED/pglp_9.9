@@ -3,7 +3,7 @@ package pglp.formes;
 import java.io.Serializable;
 
 /**
- * Classe implementant la forme Triangle
+ * Classe implementant la forme Triangle.
  */
 public class Triangle extends Forme implements Serializable {
 
@@ -44,6 +44,16 @@ public class Triangle extends Forme implements Serializable {
     this.point3 = point3;
   }
 
+  /**
+   * Constructeur d'un triangle.
+   * @param nom Nom du dessin
+   * @param x1 abcisse du premier point
+   * @param y1 ordonnée du premier point
+   * @param x2 abcisse du deuxième point
+   * @param y2 ordonnée du deuxième point
+   * @param x3 abcisse du troisième point
+   * @param y3 ordonnée du troisième point
+   */
   public Triangle(final String nom,
                   final int x1, final int y1,
                   final int x2, final int y2,
@@ -52,7 +62,7 @@ public class Triangle extends Forme implements Serializable {
     this.point1 = new Point(x1,y1);
     this.point2 = new Point(x2,y2);
     this.point3 = new Point(x3,y3);
-    this.id +=1;
+    this.id += 1;
   }
 
   /**
@@ -72,10 +82,10 @@ public class Triangle extends Forme implements Serializable {
   @Override
   public String toString() {
     return super.toString()
-        +"-->Triangle(" +
-        "point1=(" + point1 +
-        "), point2=(" + point2 +
-        "), point3=(" + point3 +
-        "))";
+        + "-->Triangle("
+        + "point1=(" + point1
+        + "), point2=(" + point2
+        + "), point3=(" + point3
+        + "))";
   }
 }

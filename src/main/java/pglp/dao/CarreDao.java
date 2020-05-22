@@ -1,19 +1,17 @@
 package pglp.dao;
 
-import pglp.formes.Carre;
 
 import java.io.*;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+import pglp.formes.Carre;
 
 public class CarreDao extends Dao<Carre> {
-
 
   @Override
   public Carre getSpecific(String nom) throws SQLException, IOException,
       ClassNotFoundException {
-    Carre carre = null;
     psSelect = conn
         .prepareStatement(SQL_DESERIALIZE_OBJECT);
     psSelect.setString(1, nom);
@@ -22,6 +20,7 @@ public class CarreDao extends Dao<Carre> {
     byte[] b = rs.getBytes(2);
     ByteArrayInputStream is = new ByteArrayInputStream(b);
     ObjectInputStream ois = new ObjectInputStream(is);
+    Carre carre = null;
     carre = (Carre) ois.readObject();
     rs.close();
     is.close();
@@ -46,12 +45,11 @@ public class CarreDao extends Dao<Carre> {
     ByteArrayOutputStream out = new ByteArrayOutputStream();
     ObjectOutputStream os = new ObjectOutputStream(out);
     os.writeObject(carre);
-    byte [] b = out.toByteArray();
+    byte[] b = out.toByteArray();
     ByteArrayInputStream objectIn = new ByteArrayInputStream(b);
 
     psInsert.setString(1, carre.getIdentifiant());
-    psInsert.setBinaryStream(2, objectIn,b.length );
-    psInsert.setString(3,carre.toString());
+    psInsert.setBinaryStream(2, objectIn, b.length);
     psInsert.executeUpdate();
     objectIn.close();
     os.flush();
@@ -62,19 +60,17 @@ public class CarreDao extends Dao<Carre> {
   }
 
 
-
   @Override
   public void update(Carre carre) throws IOException, SQLException {
     ByteArrayOutputStream out = new ByteArrayOutputStream();
     ObjectOutputStream os = new ObjectOutputStream(out);
     os.writeObject(carre);
-    byte [] b = out.toByteArray();
+    byte[] b = out.toByteArray();
     ByteArrayInputStream objectIn = new ByteArrayInputStream(b);
     psUpdate = conn.prepareStatement(
         SQL_UPDATE_OBJECT);
-    psUpdate.setBinaryStream(1,objectIn,b.length );
+    psUpdate.setBinaryStream(1, objectIn, b.length);
     psUpdate.setString(2, carre.toString());
-    psUpdate.setString(3, carre.getIdentifiant());
     psUpdate.executeUpdate();
 
   }

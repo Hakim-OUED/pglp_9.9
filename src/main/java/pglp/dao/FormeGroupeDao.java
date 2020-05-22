@@ -1,17 +1,24 @@
 package pglp.dao;
 
-import pglp.formes.FormeGroupe;
-
 
 import java.io.*;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+import pglp.formes.FormeGroupe;
 
 public class FormeGroupeDao extends Dao<FormeGroupe> {
+  /**
+   * Sélectionner un ensemble de dessins.
+   * @param nom nom de l'ensemble à sélectionner
+   * @return L'ensemble des dessins de ce group.
+   * @throws SQLException SQL Exception
+   * @throws IOException IOException
+   * @throws ClassNotFoundException Classe non trouvé
+   */
   @Override
-  public FormeGroupe getSpecific(String nom) throws SQLException, IOException, ClassNotFoundException {
-    FormeGroupe formeGroupe = null;
+  public FormeGroupe getSpecific(String nom) throws SQLException,
+      IOException, ClassNotFoundException {
     psSelect = conn
         .prepareStatement(SQL_DESERIALIZE_OBJECT);
     psSelect.setString(1, nom);
@@ -20,6 +27,7 @@ public class FormeGroupeDao extends Dao<FormeGroupe> {
     byte[] b = rs.getBytes(2);
     ByteArrayInputStream is = new ByteArrayInputStream(b);
     ObjectInputStream ois = new ObjectInputStream(is);
+    FormeGroupe formeGroupe = null;
     formeGroupe = (FormeGroupe) ois.readObject();
     formeGroupe.setIdentifiant(nom);
     rs.close();
@@ -36,19 +44,18 @@ public class FormeGroupeDao extends Dao<FormeGroupe> {
   }
 
   @Override
-  public String create(FormeGroupe formeGroupe) throws SQLException, IOException, ClassNotFoundException {
+  public String create(FormeGroupe formeGroupe) throws SQLException,
+      IOException, ClassNotFoundException {
 
     psInsert = conn.prepareStatement(SQL_SERIALIZE_OBJECT);
     statements.add(psInsert);
     ByteArrayOutputStream out = new ByteArrayOutputStream();
     ObjectOutputStream os = new ObjectOutputStream(out);
     os.writeObject(formeGroupe);
-    byte [] b = out.toByteArray();
+    byte[] b = out.toByteArray();
     ByteArrayInputStream objectIn = new ByteArrayInputStream(b);
-
     psInsert.setString(1, formeGroupe.getIdentifiant());
-    psInsert.setBinaryStream(2, objectIn,b.length );
-    psInsert.setString(3,formeGroupe.toString());
+    psInsert.setBinaryStream(2, objectIn, b.length);
     psInsert.executeUpdate();
     objectIn.close();
     os.flush();
@@ -59,19 +66,17 @@ public class FormeGroupeDao extends Dao<FormeGroupe> {
   }
 
 
-
   @Override
   public void update(FormeGroupe formeGroupe) throws IOException, SQLException {
     ByteArrayOutputStream out = new ByteArrayOutputStream();
     ObjectOutputStream os = new ObjectOutputStream(out);
     os.writeObject(formeGroupe);
-    byte [] b = out.toByteArray();
+    byte[] b = out.toByteArray();
     ByteArrayInputStream objectIn = new ByteArrayInputStream(b);
     psUpdate = conn.prepareStatement(
         SQL_UPDATE_OBJECT);
-    psUpdate.setBinaryStream(1,objectIn,b.length );
+    psUpdate.setBinaryStream(1, objectIn, b.length);
     psUpdate.setString(2, formeGroupe.toString());
-    psUpdate.setString(3, formeGroupe.getIdentifiant());
     psUpdate.executeUpdate();
 
   }

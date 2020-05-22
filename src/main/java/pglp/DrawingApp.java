@@ -1,21 +1,23 @@
 package pglp;
 
-import pglp.commandes.Commande;
-import pglp.dao.Dao;
-import pglp.exceptions.*;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
+import pglp.commandes.Commande;
+import pglp.dao.Dao;
+import pglp.exceptions.*;
 
 /**
- * Classse principale
+ * Classse principale.
  */
 
 public enum DrawingApp {
 
   DESSIN;
+
   /**
    * Execute le programme.
+   *
    * @throws IOException Exception des saisies
    */
   public static void run() {
@@ -44,7 +46,8 @@ public enum DrawingApp {
 
     }
   }
+
   public static void main(final String[] args) throws ClassNotFoundException, SQLException {
-   DESSIN.run();
+    DESSIN.run();
   }
 }

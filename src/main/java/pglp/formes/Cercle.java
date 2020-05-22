@@ -1,12 +1,9 @@
 package pglp.formes;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 /**
- * Classe implementant la forme Cercle
+ * Classe implementant la forme Cercle.
  */
 public class Cercle extends Forme implements Serializable {
 
@@ -16,7 +13,7 @@ public class Cercle extends Forme implements Serializable {
   private static final long serialVersionUID = 1L;
   private static int id = 0;
 
-   //le centre
+  //le centre
   private Point centre;
   //le rayon
   private int rayon;
@@ -37,16 +34,24 @@ public class Cercle extends Forme implements Serializable {
     this.rayon = rayon;
   }
 
+  /**
+   * Constructeur d'un cercle.
+   * @param nom nom du dessin
+   * @param x abcisse du centre
+   * @param y ordonnée du centre
+   * @param rayon rayon du cercle
+   */
   public Cercle(final String nom, final int x,
                 final int y, final int rayon) {
     super(nom);
-    this.centre = new Point(x,y);
+    this.centre = new Point(x, y);
     this.rayon = rayon;
-    this.id +=1;
+    this.id += 1;
   }
 
   /**
-   * Implementation du deplacement d'un cercle
+   * Implementation du deplacement d'un cercle.
+   *
    * @param x Nouvelle coordonnée X
    * @param y Nouvelle coordonée Y
    * @return le cercle déplacé
@@ -62,8 +67,6 @@ public class Cercle extends Forme implements Serializable {
     return super.toString()
         + "--> Cercle(centre=("
         + this.centre
-        +"),rayon="+this.rayon+")";
+        + "),rayon=" + this.rayon + ")";
   }
-
-
 }

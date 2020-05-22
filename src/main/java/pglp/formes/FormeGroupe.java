@@ -38,29 +38,35 @@ public class FormeGroupe extends Forme implements Iterable<Forme>, Serializable 
     this.ensemble = ensemble;
   }
 
+  /**
+   * Constructeur d'un ensemble de dessin.
+   * @param nom nom du groupe
+   */
   public FormeGroupe(String nom) {
     super(nom);
     this.nom = nom;
     this.ensemble = new ArrayList<>();
-    this.id +=1;
+    this.id += 1;
   }
 
   /**
    * Deplace un ensemble de dessin.
+   *
    * @param x Nouvelle coordonnée X
    * @param y Nouvelle coordonnée Y
    * @return l'le groupe
    */
   @Override
   public Forme deplacer(int x, int y) {
-    for (Forme forme : ensemble){
-      forme.deplacer(x,y);
+    for (Forme forme : ensemble) {
+      forme.deplacer(x, y);
     }
     return this;
   }
 
   /**
    * Ajjoute un dessin au groupe.
+   *
    * @param forme le dessin à ajouter
    */
   public void addForme(Forme forme) {
@@ -68,7 +74,8 @@ public class FormeGroupe extends Forme implements Iterable<Forme>, Serializable 
   }
 
   /**
-   * Verifie si le groupe contient un dessin
+   * Verifie si le groupe contient un dessin.
+   *
    * @param forme le dessin à vérifier
    * @return True si le dessin est dans le groupe False sinon
    */
@@ -77,13 +84,23 @@ public class FormeGroupe extends Forme implements Iterable<Forme>, Serializable 
   }
 
   /**
-   * Supprime un dessin de lu groupe
+   * Supprime un dessin de lu groupe.
+   *
    * @param forme le dessin à supprimer
    */
   public void remove(Forme forme) {
-    if (this.contient(forme)){
+    if (this.contient(forme)) {
       this.ensemble.remove(forme);
     }
+  }
+
+  @Override
+  public String toString() {
+    String description = "**Elements: \n";
+    for (Forme forme: ensemble
+         ) {description = description.concat(forme.toString()+"\n");
+    }
+    return "**Groupe: "+ super.toString() + "\n" + description ;
   }
 
   @Override

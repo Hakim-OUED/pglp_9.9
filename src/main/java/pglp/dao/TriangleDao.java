@@ -1,17 +1,21 @@
 package pglp.dao;
 
 
-import pglp.formes.Triangle;
-
 import java.io.*;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+import pglp.formes.Triangle;
 
 public class TriangleDao extends Dao<Triangle> {
 
+  /**
+   *  selectionne un triangle dans la BD.
+   * @param nom le nom du triangle
+   * @return le Triangle trouvé
+   */
   public Triangle getSpecific(String nom) throws SQLException, IOException, ClassNotFoundException {
-    Triangle triangle = null;
+
     psSelect = conn
         .prepareStatement(SQL_DESERIALIZE_OBJECT);
     psSelect.setString(1, nom);
@@ -20,6 +24,7 @@ public class TriangleDao extends Dao<Triangle> {
     byte[] b = rs.getBytes(2);
     ByteArrayInputStream is = new ByteArrayInputStream(b);
     ObjectInputStream ois = new ObjectInputStream(is);
+    Triangle triangle = null;
     triangle = (Triangle) ois.readObject();
     rs.close();
     is.close();
@@ -44,11 +49,10 @@ public class TriangleDao extends Dao<Triangle> {
     ByteArrayOutputStream out = new ByteArrayOutputStream();
     ObjectOutputStream os = new ObjectOutputStream(out);
     os.writeObject(triangle);
-    byte [] b = out.toByteArray();
+    byte[] b = out.toByteArray();
     ByteArrayInputStream objectIn = new ByteArrayInputStream(b);
     psInsert.setString(1, triangle.getIdentifiant());
-    psInsert.setBinaryStream(2, objectIn,b.length );
-    psInsert.setString(3,triangle.toString());
+    psInsert.setBinaryStream(2, objectIn, b.length);
     psInsert.executeUpdate();
     objectIn.close();
     os.flush();
@@ -59,19 +63,17 @@ public class TriangleDao extends Dao<Triangle> {
   }
 
 
-
   @Override
   public void update(Triangle triangle) throws IOException, SQLException {
     ByteArrayOutputStream out = new ByteArrayOutputStream();
     ObjectOutputStream os = new ObjectOutputStream(out);
     os.writeObject(triangle);
-    byte [] b = out.toByteArray();
+    byte[] b = out.toByteArray();
     ByteArrayInputStream objectIn = new ByteArrayInputStream(b);
     psUpdate = conn.prepareStatement(
         SQL_UPDATE_OBJECT);
-    psUpdate.setBinaryStream(1,objectIn,b.length );
+    psUpdate.setBinaryStream(1, objectIn, b.length);
     psUpdate.setString(2, triangle.toString());
-    psUpdate.setString(3, triangle.getIdentifiant());
     psUpdate.executeUpdate();
 
   }

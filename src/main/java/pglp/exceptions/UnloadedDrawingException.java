@@ -1,11 +1,13 @@
 package pglp.exceptions;
 
-import pglp.DrawingTUI;
+
 
 public class UnloadedDrawingException extends Exception {
-  public UnloadedDrawingException() {
-    super("Le dessin que vous essayé de deplacer" +
-        " n'existe pas ou n'est pas chargé!\n" +
-        "Veillez le charger ou le créer avant.");
+  /**
+   * Exception lorsqu'un dessin dans la BD n'est pas chargé avant utilisation.
+   */
+  public UnloadedDrawingException(String drawing) {
+    super(drawing + " n'existe pas ou n'est pas chargé!"
+        + "Veillez le charger ou le créer avant.");
   }
 }
