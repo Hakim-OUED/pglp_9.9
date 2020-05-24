@@ -89,6 +89,7 @@ ny: augmentation de l'ordonnée
 - > ``` Quit ```
 ### Exemple
 ![image6](https://github.com/Hakim-OUED/pgpl_9.9/blob/master/Capture6.PNG)
+![image7](https://github.com/Hakim-OUED/pgpl_9.9/blob/master/Capture7.PNG)
 
 
  
