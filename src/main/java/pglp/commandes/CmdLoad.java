@@ -30,27 +30,27 @@ public class CmdLoad implements Commande {
         Cercle cercle = (Cercle) dessin;
         CmdCreate.formes.put(identifiant, cercle);
         status = 1;
-        return String.valueOf(status);
+        return identifiant + " a été chargé dans le contexte";
       } else if (dessin instanceof Carre) {
         Carre carre = (Carre) dessin;
         CmdCreate.formes.put(identifiant, carre);
         status = 1;
-        return String.valueOf(status);
+        return identifiant + " a été chargé dans le contexte";
       } else if (dessin instanceof Rectangle) {
         Rectangle rectangle = (Rectangle) dessin;
         CmdCreate.formes.put(identifiant, rectangle);
         status = 1;
-        return String.valueOf(status);
+        return identifiant + " a été chargé dans le contexte";
       } else if (dessin instanceof Triangle) {
         Triangle triangle = (Triangle) dessin;
         CmdCreate.formes.put(identifiant, triangle);
         status = 1;
-        return String.valueOf(status);
+        return identifiant + " a été chargé dans le contexte";
       } else if (dessin instanceof FormeGroupe) {
         FormeGroupe groupe = (FormeGroupe) dessin;
         CmdCreate.formes.put(identifiant, groupe);
         status = 1;
-        return String.valueOf(status);
+        return identifiant + " a été chargé dans le contexte";
       } else {
         throw new DrawingNotExistException();
       }

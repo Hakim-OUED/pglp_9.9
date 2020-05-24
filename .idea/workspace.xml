@@ -12,67 +12,11 @@
       <change beforePath="$PROJECT_DIR$/dessins/seg0/c4a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c4a1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dessins/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c60.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dessins/seg0/c81.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dessins/seg0/c81.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/DrawingApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/DrawingApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/InitBdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/InitBdd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/commandes/CmdCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/commandes/CmdCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/commandes/CmdGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/commandes/CmdGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/DrawingTUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/DrawingTUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/commandes/CmdHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/commandes/CmdHelp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/commandes/CmdLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/commandes/CmdLoad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pglp/commandes/CmdMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/commandes/CmdMove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/commandes/CmdSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/commandes/CmdSave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/dao/CarreDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/dao/CarreDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/dao/CercleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/dao/CercleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/dao/Dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/dao/FormeGroupeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/dao/FormeGroupeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/dao/RectangleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/dao/RectangleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/dao/TriangleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/dao/TriangleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pglp/formes/FormeGroupe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pglp/formes/FormeGroupe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pglp/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pglp/commandes/CmdLoadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pglp/commandes/CmdLoadTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pglp/commandes/CmdShowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pglp/commandes/CmdShowTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pglp/dao/CercleDaoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/pglp_9.9.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pglp/DrawingApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pglp/DrawingApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pglp/InitBdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pglp/InitBdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pglp/commandes/CmdCreate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pglp/commandes/CmdGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pglp/commandes/CmdGroup.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pglp/commandes/CmdMove.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pglp/commandes/CmdMove.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pglp/commandes/CmdSave.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pglp/commandes/CmdSave.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pglp/dao/Dao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pglp/dao/Dao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pglp/formes/FormeGroupe.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pglp/formes/FormeGroupe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spotbugsXml.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2020-05-21T20-46-48_886-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.AppTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.DrawingTUITest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.DrawingTUITest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.commandes.CmdCreateTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.commandes.CmdCreateTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.commandes.CmdLoadTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.commandes.CmdLoadTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.commandes.CmdMoveTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.commandes.CmdMoveTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.commandes.CmdSaveTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.commandes.CmdSaveTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.commandes.CmdShowTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.commandes.CmdShowTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.dao.CercleDaoTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.dao.CercleDaoTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.formes.CarreTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.formes.CarreTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.formes.CercleTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.formes.CercleTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.formes.FormeGroupeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.formes.FormeGroupeTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.formes.RectangleTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.formes.RectangleTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.formes.TriangleTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pglp.formes.TriangleTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/pglp.AppTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/pglp.commandes.CmdCreateTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/pglp.commandes.CmdCreateTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/pglp.commandes.CmdLoadTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/pglp.commandes.CmdLoadTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/pglp.commandes.CmdMoveTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/pglp.commandes.CmdMoveTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/pglp.commandes.CmdSaveTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/pglp.commandes.CmdSaveTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/pglp.commandes.CmdShowTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/pglp.commandes.CmdShowTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/pglp.dao.CercleDaoTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/pglp.dao.CercleDaoTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/pglp.formes.CercleTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/pglp.formes.CercleTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/pglp.formes.FormeGroupeTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/pglp.formes.FormeGroupeTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/pglp.formes.TriangleTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/pglp.formes.TriangleTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/pglp_9.9.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pglp/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pglp/commandes/CmdLoadTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pglp/commandes/CmdLoadTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pglp/commandes/CmdShowTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pglp/commandes/CmdShowTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pglp/dao/CercleDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pglp/dao/CercleDaoTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,7 +206,7 @@
       <updated>1589362971120</updated>
       <workItem from="1589362976719" duration="245000" />
       <workItem from="1589471748894" duration="216726000" />
-      <workItem from="1590349268586" duration="1943000" />
+      <workItem from="1590349268586" duration="5845000" />
     </task>
     <servers />
   </component>
@@ -302,22 +246,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590276547585" />
-    <state width="1323" height="194" key="GridCell.Tab.0.bottom" timestamp="1590351291746">
+    <state width="1323" height="306" key="GridCell.Tab.0.bottom" timestamp="1590355315767">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="194" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590351291746" />
-    <state width="1323" height="194" key="GridCell.Tab.0.center" timestamp="1590351291746">
+    <state width="1323" height="306" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590355315767" />
+    <state width="1323" height="306" key="GridCell.Tab.0.center" timestamp="1590355315767">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="194" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590351291746" />
-    <state width="1323" height="194" key="GridCell.Tab.0.left" timestamp="1590351291746">
+    <state width="1323" height="306" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590355315767" />
+    <state width="1323" height="306" key="GridCell.Tab.0.left" timestamp="1590355315767">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="194" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590351291746" />
-    <state width="1323" height="194" key="GridCell.Tab.0.right" timestamp="1590351291746">
+    <state width="1323" height="306" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590355315767" />
+    <state width="1323" height="306" key="GridCell.Tab.0.right" timestamp="1590355315767">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="194" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590351291746" />
+    <state width="1323" height="306" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590355315767" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1590198641382">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

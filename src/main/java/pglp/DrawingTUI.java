@@ -25,7 +25,7 @@ public class DrawingTUI {
    * @return retourne un objet Commande
    */
   public Commande nextCommand() throws UnknowCommandException, IOException {
-    System.out.println("En attente d'une Commande> ");
+    System.out.print("En attente d'une Commande (ou help)> ");
     String saisie = scanner.nextLine().toLowerCase();
     saisie = saisie.replaceAll("\\s+", "");
     String parametres;
@@ -53,7 +53,6 @@ public class DrawingTUI {
       String[] params = p.split(parametres, 2);
       return new CmdMove(params);
     } else if (Pattern.matches(regExHelp, saisie)) {
-      System.out.println("quithelp");
       return new CmdHelp();
     } else if (Pattern.matches(regExQuit, saisie)) {
       return new CmdQuit();

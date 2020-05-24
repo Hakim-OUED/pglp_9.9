@@ -37,7 +37,7 @@ public class CmdMove implements Commande {
       int ny = parsedParams.get(1);
       CmdCreate.formes.get(identifiant).deplacer(nx, ny);
       parsedParams.clear();
-      return String.valueOf(1);
+      return identifiant + " a été déplacé";
     } else {
       parsedParams.clear();
       throw new UnloadedDrawingException(identifiant);
