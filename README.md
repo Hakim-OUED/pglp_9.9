@@ -66,7 +66,7 @@ yi: ordonnée du point i
 ## Afficher une forme ou un groupe de forme
 - > ```Show(nom_forme) ou Show(nom_groupe) ```
 ## Charger une forme ou un ensemble de forme sauvegardé dans la BD
-- > ```Load(nom_forme) ou load(nom_groupe)
+- > ```Load(nom_forme) ou load(nom_groupe) ```
 ### Exemple
 ![image5](https://github.com/Hakim-OUED/pgpl_9.9/blob/master/Capture5.PNG)
 
