@@ -14,7 +14,7 @@ import pglp.formes.*;
  */
 public class CmdCreate implements Commande {
   //Liste des forme créé durant la session
-  public static Map<String, Forme> formes = new HashMap<String, Forme>();
+  public static Map<String, Forme> formes = new HashMap<String, Forme>();;
   //nom de la forme
   private static String nomForme;
   //Paramètres non formatté
@@ -57,32 +57,32 @@ public class CmdCreate implements Commande {
       Carre carre = new Carre(nomForme, parsedParams.get(0), parsedParams.get(1),
           parsedParams.get(2));
       formes.put(nomForme, carre);
-      parsedParams.removeAll(parsedParams);
+      parsedParams.clear();
       status = 1;
-      return String.valueOf(status);
+      return carre.toString();
     } else if (Pattern.matches(regExCreateCercle, parametres)) {
       Cercle cercle = new Cercle(nomForme, parsedParams.get(0), parsedParams.get(1),
           parsedParams.get(2));
       formes.put(nomForme, cercle);
-      parsedParams.removeAll(parsedParams);
+      parsedParams.clear();
       status = 1;
-      return String.valueOf(status);
+      return cercle.toString();
     } else if (Pattern.matches(regExCreateRectangle, parametres)) {
       Rectangle rectangle = new Rectangle(nomForme, parsedParams.get(0), parsedParams.get(1),
           parsedParams.get(2), parsedParams.get(3));
       formes.put(nomForme, rectangle);
-      parsedParams.removeAll(parsedParams);
+      parsedParams.clear();
       status = 1;
-      return String.valueOf(status);
+      return rectangle.toString();
     } else if (Pattern.matches(regExCreateTriangle, parametres)) {
       Triangle triangle = new Triangle(nomForme, parsedParams.get(0), parsedParams.get(1),
           parsedParams.get(2), parsedParams.get(3), parsedParams.get(4), parsedParams.get(5));
       formes.put(nomForme, triangle);
-      parsedParams.removeAll(parsedParams);
+      parsedParams.clear();
       status = 1;
-      return String.valueOf(status);
+      return triangle.toString();
     } else {
-      parsedParams.removeAll(parsedParams);
+      parsedParams.clear();
       throw new UnknowFormException();
     }
 

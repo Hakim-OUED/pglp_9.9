@@ -31,6 +31,7 @@ public enum DrawingApp {
     }
     DrawingTUI drawingTUI = new DrawingTUI();
     Commande cmd;
+    System.out.println("******Logiciel de Dessin ********");
     while (true) {
       try {
         cmd = drawingTUI.nextCommand();
@@ -48,6 +49,7 @@ public enum DrawingApp {
   }
 
   public static void main(final String[] args) throws ClassNotFoundException, SQLException {
+
     DESSIN.run();
   }
 }

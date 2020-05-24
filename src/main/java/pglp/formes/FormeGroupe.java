@@ -40,6 +40,7 @@ public class FormeGroupe extends Forme implements Iterable<Forme>, Serializable 
 
   /**
    * Constructeur d'un ensemble de dessin.
+   *
    * @param nom nom du groupe
    */
   public FormeGroupe(String nom) {
@@ -97,10 +98,11 @@ public class FormeGroupe extends Forme implements Iterable<Forme>, Serializable 
   @Override
   public String toString() {
     String description = "**Elements: \n";
-    for (Forme forme: ensemble
-         ) {description = description.concat(forme.toString()+"\n");
+    for (Forme forme : ensemble
+    ) {
+      description = description.concat(forme.toString() + "\n");
     }
-    return "**Groupe: "+ super.toString() + "\n" + description ;
+    return "**Groupe: " + super.toString() + "\n" + description;
   }
 
   @Override

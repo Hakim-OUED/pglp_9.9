@@ -21,7 +21,7 @@ public class RectangleDao extends Dao<Rectangle> {
       IOException, ClassNotFoundException {
 
     psSelect = conn
-        .prepareStatement(SQL_DESERIALIZE_OBJECT);
+        .prepareStatement(SQL_SELECT_OBJECT);
     psSelect.setString(1, nom);
     ResultSet rs = psSelect.executeQuery();
     rs.next();
@@ -47,7 +47,7 @@ public class RectangleDao extends Dao<Rectangle> {
   public String create(Rectangle rectangle) throws SQLException,
       IOException, ClassNotFoundException {
 
-    psInsert = conn.prepareStatement(SQL_SERIALIZE_OBJECT);
+    psInsert = conn.prepareStatement(SQL_INSERT_OBJECT);
     statements.add(psInsert);
     ByteArrayOutputStream out = new ByteArrayOutputStream();
     ObjectOutputStream os = new ObjectOutputStream(out);

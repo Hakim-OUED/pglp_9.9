@@ -18,10 +18,10 @@ public abstract class Dao<T> {
   static PreparedStatement psSelect;
   ResultSet rs = null;
 
-  static final String SQL_SERIALIZE_OBJECT =
+  static final String SQL_INSERT_OBJECT =
       "INSERT INTO dessin(id, objet) VALUES (?,?)";
 
-  static final String SQL_DESERIALIZE_OBJECT =
+  static final String SQL_SELECT_OBJECT =
       "SELECT * FROM dessin WHERE id = ?";
 
   static final String SQL_UPDATE_OBJECT =
@@ -42,7 +42,7 @@ public abstract class Dao<T> {
    */
   public static Forme get(String nom) throws SQLException, IOException, ClassNotFoundException {
 
-    psSelect = conn.prepareStatement(SQL_DESERIALIZE_OBJECT);
+    psSelect = conn.prepareStatement(SQL_SELECT_OBJECT);
     psSelect.setString(1, nom);
     ResultSet rs = psSelect.executeQuery();
     rs.next();

@@ -8,6 +8,6 @@ pglp\formes\RectangleTest.class
 pglp\commandes\CmdShowTest.class
 pglp\dao\CercleDaoTest.class
 pglp\commandes\CmdMoveTest.class
-pglp\AppTest.class
 pglp\commandes\CmdSaveTest.class
+pglp\DrawingAppTest.class
 pglp\formes\CarreTest.class

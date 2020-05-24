@@ -13,7 +13,7 @@ public class CarreDao extends Dao<Carre> {
   public Carre getSpecific(String nom) throws SQLException, IOException,
       ClassNotFoundException {
     psSelect = conn
-        .prepareStatement(SQL_DESERIALIZE_OBJECT);
+        .prepareStatement(SQL_SELECT_OBJECT);
     psSelect.setString(1, nom);
     ResultSet rs = psSelect.executeQuery();
     rs.next();
@@ -38,7 +38,7 @@ public class CarreDao extends Dao<Carre> {
   @Override
   public String create(Carre carre) throws SQLException, IOException, ClassNotFoundException {
 
-    psInsert = conn.prepareStatement(SQL_SERIALIZE_OBJECT);
+    psInsert = conn.prepareStatement(SQL_INSERT_OBJECT);
     statements.add(psInsert);
     //Object obj = (Object) cercle;
 

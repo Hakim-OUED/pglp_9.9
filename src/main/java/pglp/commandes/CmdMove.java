@@ -36,10 +36,10 @@ public class CmdMove implements Commande {
       int nx = parsedParams.get(0);
       int ny = parsedParams.get(1);
       CmdCreate.formes.get(identifiant).deplacer(nx, ny);
-      parsedParams.removeAll(parsedParams);
+      parsedParams.clear();
       return String.valueOf(1);
     } else {
-      parsedParams.removeAll(parsedParams);
+      parsedParams.clear();
       throw new UnloadedDrawingException(identifiant);
     }
   }

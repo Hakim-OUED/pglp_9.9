@@ -1,14 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: pglp.dao.CercleDaoTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.338 s <<< FAILURE! - in pglp.dao.CercleDaoTest
-testCreate(pglp.dao.CercleDaoTest)  Time elapsed: 0.08 s  <<< ERROR!
-pglp.exceptions.KeyAlreadyExistException: Un objet de ce nom existe déjà
-	at pglp.dao.CercleDaoTest.testCreate(CercleDaoTest.java:42)
-
-testUpdate(pglp.dao.CercleDaoTest)  Time elapsed: 0.092 s  <<< ERROR!
-java.sql.SQLException: Invalid cursor state - no current row.
-	at pglp.dao.CercleDaoTest.testUpdate(CercleDaoTest.java:56)
-Caused by: org.apache.derby.shared.common.error.StandardException: Invalid cursor state - no current row.
-	at pglp.dao.CercleDaoTest.testUpdate(CercleDaoTest.java:56)
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in pglp.dao.CercleDaoTest

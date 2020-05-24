@@ -1,6 +1,6 @@
 C:\Users\Utilisateur\Documents\prog GL\pglp_9.9\src\main\java\pglp\commandes\Commande.java
 C:\Users\Utilisateur\Documents\prog GL\pglp_9.9\src\main\java\pglp\exceptions\DrawingAlreadyLoadException.java
-C:\Users\Utilisateur\Documents\prog GL\pglp_9.9\src\main\java\pglp\commandes\CommandFactory.java
+C:\Users\Utilisateur\Documents\prog GL\pglp_9.9\src\main\java\pglp\commandes\CmdGroup.java
 C:\Users\Utilisateur\Documents\prog GL\pglp_9.9\src\main\java\pglp\formes\Triangle.java
 C:\Users\Utilisateur\Documents\prog GL\pglp_9.9\src\main\java\pglp\commandes\CmdShow.java
 C:\Users\Utilisateur\Documents\prog GL\pglp_9.9\src\main\java\pglp\dao\Dao.java

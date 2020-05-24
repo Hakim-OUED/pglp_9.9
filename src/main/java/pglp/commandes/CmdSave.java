@@ -11,7 +11,7 @@ import pglp.formes.Forme;
 
 public class CmdSave implements Commande {
   //Identifiant du dessin à sauvegarder
-  public static String identifiant;
+  protected static String identifiant;
 
   public CmdSave(String identifiant) {
     this.identifiant = identifiant;

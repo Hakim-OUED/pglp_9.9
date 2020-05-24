@@ -24,6 +24,8 @@ public abstract class InitBdd {
     props.put("user", "user");
     props.put("password", "user");
     try {
+     //new org.apache.derby.iapi.jdbc.AutoloadedDriver();
+      //new org.apache.derby.;
       conn = DriverManager.getConnection("jdbc:derby:" + nomBd
           + ";create=true", props);
       s = conn.createStatement();
