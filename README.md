@@ -51,5 +51,39 @@ xi: abcisse du point i
 yi: ordonnée du point i
 
 ### Exemple
-![image1](https://github.com/Hakim-OUED/pgpl_9.9/blob/master/Capture1.PNG)
+![image1](https://github.com/Hakim-OUED/pgpl_9.9/blob/master/Capture7.PNG)
 
+## Regrouper des formes
+- > ``` Nom_groupe = group(forme1, forme2, ....., formeN) ```
+### Exemple
+![image2](https://github.com/Hakim-OUED/pgpl_9.9/blob/master/Capture2.PNG)
+
+## Sauvegarder une forme ou un ensemble de forme
+- > ```Save(nom_forme) ou save(nom_groupe) ```
+### Exemple
+![image3](https://github.com/Hakim-OUED/pgpl_9.9/blob/master/Capture3.PNG)
+
+## Afficher une forme ou un groupe de forme
+- > ```Show(nom_forme) ou Show(nom_groupe) ```
+## Charger une forme ou un ensemble de forme sauvegardé dans la BD
+- > ```Load(nom_forme) ou load(nom_groupe)
+### Exemple
+![image5](https://github.com/Hakim-OUED/pgpl_9.9/blob/master/Capture5.PNG)
+
+## Deplacer une forme ou un groupe
+- > ``` Move(nom_forme, (nx,ny)) ou move(nom_groupe, (nx,ny)) ```
+nx: augmentation de l'abcisse
+ny: augmentation de l'ordonnée
+- > NB: Il faut au préalable créer ou charger la figure s'elle est dans la BD
+### Exemple
+![image4](https://github.com/Hakim-OUED/pgpl_9.9/blob/master/Capture4.PNG)
+
+## Afficher la liste des commandes
+- > ``` Help ```
+## Quitter le programme
+- > ``` Quit ```
+### Exemple
+![image6](https://github.com/Hakim-OUED/pgpl_9.9/blob/master/Capture6.PNG)
+
+
+ 
