@@ -51,5 +51,5 @@ xi: abcisse du point i
 yi: ordonnée du point i
 
 ### Exemple
-
+![image1](https://github.com/Hakim-OUED/pgpl_9.9/blob/master/Capture1.PNG)
 
