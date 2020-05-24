@@ -21,3 +21,35 @@ Le logiciel offre les fonctionnalités suivantes:
 * Chaque forme peut être être affichée et déplacée.
 * Les formes peuvent être regroupées et pourront subir des traitements globaux comme par exemple déplacer ensemble un cercle et un triangle.
 * Un dessin peut être sauvegardé/chargé dans le SGBD embarqué DERBY
+
+
+# Syntaxes
+
+## Création d'une forme
+- > Cercle:
+```Nom_forme = Cercle((x,y), r) ```
+x: abcisse du centre
+y: ordonnée du centre
+r: rayon
+
+- > Carre: 
+```Nom_forme = Carre((x,y), c) ```
+x: abcisse du point origine (en haut à gauche)
+y: ordonnée du point origine
+c: coté
+
+- >Rectangle:
+```Nom_forme = Rectangle((x,y), lon,lar) ```
+x: abcisse du point origine (en haut à gauche)
+y: ordonnée du point origine
+lon: longueur
+lar: largeur
+
+- >Triangle:
+```Nom_forme = Triangle((x1,y1), (x2,y2), (x3,y3)) ```
+xi: abcisse du point i 
+yi: ordonnée du point i
+
+### Exemple
+
+
