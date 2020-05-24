@@ -13,6 +13,11 @@ Le logiciel offre les fonctionnalités suivantes:
 * Derby
 
 # mise en oeuvre:
+## Execution
+- > Se positionner dans le projet
+- > mvn package
+- > java -jar pglp_9.9-1.0-SNAPSHOT.jar (Il faut au préalable indiquer le classpath de du driver Derby dans le path)
+- > ou encore ouvrir le projet avec un IDE et executer DrawingApp.java
 
 ## Fonctionnalité: 
 * Opération CRUD
